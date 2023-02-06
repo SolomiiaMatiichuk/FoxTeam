@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+"usart-rx\startup_stm32f051x8.o"
+"usart-rx\main.o"
+"usart-rx\stm32f0xx_it.o"
+"usart-rx\stm32f0xx_hal_msp.o"
+"usart-rx\stm32f0xx_hal_tim.o"
+"usart-rx\stm32f0xx_hal_tim_ex.o"
+"usart-rx\stm32f0xx_hal_uart.o"
+"usart-rx\stm32f0xx_hal_uart_ex.o"
+"usart-rx\stm32f0xx_hal_rcc.o"
+"usart-rx\stm32f0xx_hal_rcc_ex.o"
+"usart-rx\stm32f0xx_hal.o"
+"usart-rx\stm32f0xx_hal_i2c.o"
+"usart-rx\stm32f0xx_hal_i2c_ex.o"
+"usart-rx\stm32f0xx_hal_gpio.o"
+"usart-rx\stm32f0xx_hal_dma.o"
+"usart-rx\stm32f0xx_hal_cortex.o"
+"usart-rx\stm32f0xx_hal_pwr.o"
+"usart-rx\stm32f0xx_hal_pwr_ex.o"
+"usart-rx\stm32f0xx_hal_flash.o"
+"usart-rx\stm32f0xx_hal_flash_ex.o"
+"usart-rx\stm32f0xx_hal_exti.o"
+"usart-rx\system_stm32f0xx.o"
+--strict --scatter "USART-RX\USART-RX.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "USART-RX.map" -o USART-RX\USART-RX.axf

@@ -1,0 +1,14 @@
+--cpu Cortex-M0
+"coderdecoder\startup_stm32f051x8.o"
+"coderdecoder\main.o"
+"coderdecoder\stm32f0xx_it.o"
+"coderdecoder\stm32f0xx_ll_gpio.o"
+"coderdecoder\stm32f0xx_ll_pwr.o"
+"coderdecoder\stm32f0xx_ll_exti.o"
+"coderdecoder\stm32f0xx_ll_rcc.o"
+"coderdecoder\stm32f0xx_ll_utils.o"
+"coderdecoder\system_stm32f0xx.o"
+--strict --scatter "CoderDecoder\CoderDecoder.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CoderDecoder.map" -o CoderDecoder\CoderDecoder.axf
